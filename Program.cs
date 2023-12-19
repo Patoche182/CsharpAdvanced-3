@@ -5,7 +5,7 @@ namespace CsharpAdvanced_3
     internal class Program
     {
         public static int age;
-        delegate void AgeDelegate(int age);
+        delegate void AgeDelegate(int age); // DELEGATE (fonction Delegate)
 
 
         public  void Jeune(int age)
