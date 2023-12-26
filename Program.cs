@@ -8,12 +8,12 @@ namespace CsharpAdvanced_3
         delegate void AgeDelegate(int age); // DELEGATE (fonction Delegate)
 
 
-        public  void Jeune(int age)
+        public void Jeune(int age)
         {
             Console.WriteLine("{0} ans, tu es jeune !", age);
         }
 
-        public  void MoinsJeune(int age)
+        public void MoinsJeune(int age)
         {
             Console.WriteLine("{0} ans, ah...tu es un peu moins jeune !", age);
         }
@@ -22,7 +22,7 @@ namespace CsharpAdvanced_3
         {
             Program p = new Program();
 
-            Random random = new Random();
+            Random random = new Random(); // Génération d'un nombre Random aléatoire (compris entre 0 et 100)
             age = random.Next(0, 100);
 
             AgeDelegate ageDel;
@@ -39,9 +39,7 @@ namespace CsharpAdvanced_3
             //    ageDel = new AgeDelegate(p.MoinsJeune);
             //}
 
-
             ageDel(age);
         }
     }
-
 }
